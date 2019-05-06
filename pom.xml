@@ -11,6 +11,7 @@
         <module>eurekaServer</module>
         <module>productDataService</module>
         <module>productViewServiceRibbon</module>
+        <module>productViewServiceFeign</module>
     </modules>
     <packaging>pom</packaging>
 
