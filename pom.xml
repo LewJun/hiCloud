@@ -10,6 +10,7 @@
     <modules>
         <module>eurekaServer</module>
         <module>productDataService</module>
+        <module>productViewServiceRibbon</module>
     </modules>
     <packaging>pom</packaging>
 
