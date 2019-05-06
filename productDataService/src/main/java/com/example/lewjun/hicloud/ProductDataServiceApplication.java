@@ -1,5 +1,6 @@
 package com.example.lewjun.hicloud;
 
+import brave.sampler.Sampler;
 import cn.hutool.core.util.NetUtil;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -20,5 +21,12 @@ public class ProductDataServiceApplication {
         new SpringApplicationBuilder(ProductDataServiceApplication.class)
                 .properties("server.port=" + port)
                 .run(args);
+    }
+
+    /**
+     * 配置 Sampler 抽样策略： ALWAYS_SAMPLE 表示持续抽样
+     */
+    public Sampler defaultSampler() {
+        return Sampler.ALWAYS_SAMPLE;
     }
 }
