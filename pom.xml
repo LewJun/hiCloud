@@ -7,6 +7,9 @@
     <groupId>com.example.lewjun.hicloud</groupId>
     <artifactId>hiCloud</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>eurekaServer</module>
+    </modules>
     <packaging>pom</packaging>
 
     <name>hiCloud</name>
